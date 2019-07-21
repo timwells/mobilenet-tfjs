@@ -1,3 +1,6 @@
+// https://superuser.com/questions/836832/how-can-i-enable-webgl-in-my-browser
+
+
 function setup() {
   let video = document.getElementById("video");
   let canvas = document.getElementById("canvas");
@@ -34,8 +37,8 @@ function setup() {
     predictions = await model.classify(canvas);
     displayPredictions(predictions);
 
-    // console.log("Predictions: ");
-    // console.log(predictions);
+    console.log("Predictions: ");
+    console.log(predictions);
   }
 
   function displayPredictions(predictions) {
